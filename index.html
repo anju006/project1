@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" >
+		function displaynum(n1)
+		{
+			calform.result.value=calform.result.value+n1;
+		}
+		
+	</script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="calculator_box">
+			<form name="calform">
+			<input type="text" name="result" id="show" style="text-align: center;"><br>
+             <input type="button" name="clear" value="Clear" onclick="calform.result.value = ''" id="esc"><br>
+             <input type="button" name="btn7" value="7" onclick="displaynum(btn7.value)" class="btn">
+             <input type="button" name="btn8" value="8" onclick="displaynum(btn8.value)" class="btn">
+             <input type="button" name="btn9" value="9" onclick="displaynum(btn9.value)" class="btn">
+             <input type="button" name="divide" value="/" onclick="displaynum(divide.value)" class="opr"><br>
+             <input type="button" name="btn4" value="4" onclick="displaynum(btn4.value)" class="btn">
+             <input type="button" name="btn5" value="5" onclick="displaynum(btn5.value)" class="btn">
+             <input type="button" name="btn6" value="6" onclick="displaynum(btn6.value)" class="btn">
+             <input type="button" name="mul" value="*" onclick="displaynum(mul.value)" class="opr"><br>
+             <input type="button" name="btn1" value="1" onclick="displaynum(btn1.value)" class="btn">
+             <input type="button" name="btn2" value="2" onclick="displaynum(btn2.value)" class="btn">
+             <input type="button" name="btn3" value="3" onclick="displaynum(btn3.value)" class="btn">
+             <input type="button" name="sub" value="-" onclick="displaynum(sub.value)" class="opr"><br>
+             <input type="button" name="btn0" value="0" onclick="displaynum(btn0.value)" class="btn">
+             <input type="button" name="decimal" value="." onclick="displaynum(decimal.value)" class="btn">
+             <input type="button" name="equal" value="=" onclick="result.value=eval(result.value)" class="opr">
+             <input type="button" name="add" value="+" onclick="displaynum(add.value)" class="opr">
+             </form>
+		</div>
+	</div>
+
+</body>
+</html>
